@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoversorCrypto.Vistas.ConvierteCryptoResult">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <!-- Título -->
+            <Label Text="Convierte tu criptomoneda" FontSize="20" HorizontalOptions="CenterAndExpand" />
+
+            <!-- Área de texto para mostrar el resultado -->
+            <Editor x:Name="ResultadoEditor" Placeholder="Resultado de la conversión es" IsReadOnly="true" HeightRequest="150" />
+
+            <!-- Botón "Volver a convertir" -->
+            <Button Text="Volver a convertir" Clicked="VolverAConvertirButton_Clicked" BackgroundColor="LightBlue" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoversorCrypto.Vistas.BilleteraActualiza">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <!-- Título -->
+            <Label Text="Actualizar datos de Mi Billetera" FontSize="20" HorizontalOptions="CenterAndExpand" />
+
+            <!-- Frame para seleccionar el item a actualizar -->
+            <Frame>
+                <Frame.Content>
+                    <StackLayout>
+                        <Label Text="Seleccionar item para actualizar" FontSize="16" />
+
+                        <!-- Switches para distintas criptomonedas -->
+                        <StackLayout>
+                            <Label Text="Bitcoin" />
+                            <Switch x:Name="BitcoinSwitch" />
+                        </StackLayout>
+                        <StackLayout>
+                            <Label Text="Ethereum" />
+                            <Switch x:Name="EthereumSwitch" />
+                        </StackLayout>
+                        <StackLayout>
+                            <Label Text="Cardano" />
+                            <Switch x:Name="CardanoSwitch" />
+                        </StackLayout>
+                        <!-- Agrega más opciones de Switch según sea necesario -->
+                    </StackLayout>
+                </Frame.Content>
+            </Frame>
+
+            <!-- Cuadro de texto para ingresar el nuevo monto -->
+            <Entry Placeholder="Ingrese nuevo monto" x:Name="NuevoMontoEntry" />
+
+            <!-- Botón "Actualizar" -->
+            <Button Text="Actualizar" Clicked="ActualizarButton_Clicked" BackgroundColor="LightBlue" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

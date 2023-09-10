@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoversorCrypto.Vistas.Inicio">
+    <Grid>
+        <StackLayout Padding="20" VerticalOptions="Center">
+            <!-- Logo de la aplicación (ajusta la imagen según tus necesidades) -->
+
+            <Image Source="Logo_crypto.PNG"/>
+
+            <!-- Texto de bienvenida -->
+            <Label Text="Bienvenido a ConversorCrypto" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+
+            <!-- Botones -->
+            <Button Text="Convertir Moneda" Clicked="ConvertirMonedaButton_Clicked" BackgroundColor="LightBlue" />
+            <Button Text="Mi Billetera" Clicked="MiBilleteraButton_Clicked" BackgroundColor="LightBlue" />
+        </StackLayout>
+
+    </Grid>
+</ContentPage>

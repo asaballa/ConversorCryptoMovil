@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoversorCrypto.Vistas.ConvierteCrypto">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <!-- Título -->
+            <Label Text="Convierte tu criptomoneda" FontSize="20" HorizontalOptions="CenterAndExpand" />
+            
+            <!-- Cuadro de texto para ingresar el monto -->
+            <Entry Placeholder="Ingrese el monto" x:Name="MontoEntry" />
+        
+
+            <Picker Title="Seleccionar Criptomoneda" x:Name="CriptomonedaPicker" />
+            <Picker Title="Seleccionar Moneda Tradicional" x:Name="MonedaTradicionalPicker" />
+
+
+            <!-- Botón para convertir -->
+            <Button Text="Convertir" Clicked="ConvertirButton_Clicked" BackgroundColor="LightBlue" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

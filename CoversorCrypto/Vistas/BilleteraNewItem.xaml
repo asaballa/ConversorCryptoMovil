@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoversorCrypto.Vistas.BilleteraNewItem">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <!-- Título -->
+            <Label Text="Ingresa un nuevo item a Mi Billetera" FontSize="20" HorizontalOptions="CenterAndExpand" />
+
+            <!-- Cuadro de texto para ingresar el monto -->
+            <Entry Placeholder="Ingrese el monto" x:Name="MontoEntry" />
+
+            <!-- Picker para seleccionar la criptomoneda -->
+            <Picker Title="Seleccionar Cryptomoneda" x:Name="CriptomonedaPicker">
+            </Picker>
+
+            <!-- Botón "Ingresar nuevo item" -->
+            <Button Text="Ingresar nuevo item" Clicked="IngresarNuevoItemButton_Clicked" BackgroundColor="LightBlue" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

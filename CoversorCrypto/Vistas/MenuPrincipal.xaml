@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoversorCrypto.Vistas.MenuPrincipal">
+    <ContentPage.Content>
+        <StackLayout Padding="20" >
+            <Label Text="Iniciar Sesión" FontSize="24" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+
+            <Entry Placeholder="Usuario" x:Name="UsernameEntry" />
+            <Entry Placeholder="Contraseña" IsPassword="true" x:Name="PasswordEntry" />
+
+            <Button Text="Iniciar Sesión" Clicked="LoginButton_Clicked" BackgroundColor="LightBlue" />
+
+            <Label Text="O inicia sesión con una red social" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+
+            <Button Text="Iniciar con Facebook" Clicked="LoginWithFacebookButton_Clicked" BackgroundColor="LightBlue" />
+            <Button Text="Iniciar con Twitter" Clicked="LoginWithTwitterButton_Clicked" BackgroundColor="LightBlue" />
+            <Button Text="Iniciar con Google" Clicked="LoginWithGoogleButton_Clicked" BackgroundColor="LightBlue" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
